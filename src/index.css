@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
@@ -7,13 +8,13 @@
 
 @layer base {
   body {
-    @apply bg-[#0a0a0a] text-white antialiased;
+    @apply bg-white text-black dark:bg-[#0a0a0a] dark:text-white antialiased;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 }
 
 .glass-morphism {
-  @apply bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl;
+  @apply bg-black/5 dark:bg-white/10 backdrop-blur-xl border border-black/10 dark:border-white/20 shadow-xl;
 }
 
 /* Custom Scrollbar */

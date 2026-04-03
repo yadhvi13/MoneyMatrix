@@ -52,6 +52,4 @@ FinVision Pro is a high-end financial management dashboard built with React, Typ
 - `src/types`: TypeScript interfaces and types.
 - `src/data`: Mock data and constants.
 
-## License
 
-Apache-2.0
